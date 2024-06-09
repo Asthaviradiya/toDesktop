@@ -1,0 +1,14 @@
+{
+  "name": "todesktop",
+  "version": "1.0.0",
+  "description": "it is fully responsive page which is created using HTML5 and Tailwind CSS framework. This page demonstrate use of tailwind CSS framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
