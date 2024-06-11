@@ -10,7 +10,7 @@
 <body>
     <!-- navbar section -->
     <nav class="p-3 flex bg-white justify-between items-center">
-        <a href="#" id="brand" class="flex gap-2 items-center">
+        <a href="#" id="brand" class="flex flex-1 gap-2 items-center">
             <img src="./Assets/asset 0.png" alt="logo" class="object-cover max-w-12 max-h-12">
             <span class="text-lg font-medium font-display">toDesktop</span>
         </a>
@@ -21,11 +21,13 @@
             <a href="#" class="font-medium hover:text-primary">Blogs</a>
             <a href="#" class="font-medium hover:text-primary">LogIn</a>
         </div>
-        <button class="hidden lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
-            <img src="./Assets/asset 1.svg" alt="">
-            <span>Electron Developers</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button class="lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <img src="./Assets/asset 1.svg" alt="">
+                <span>Electron Developers</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
         <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
         </button>
@@ -57,18 +59,18 @@
     <!-- hero-section -->
      <main>
         <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
-            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-cente sm:pt-12">
                 <div id="version-text" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 group">
                     <div class="w-2 h-2 border bg-yellow-400 rounded-full border-yellow-600">
                     </div>
                     <p class="font-display font-medium text-yellow-600">v0.21.1: <span class="text-yellow-800">find-in-page bug fixes</span></p>
                         <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
                 </div>
-                <h1 class="text-4xl">web app to desktop app in minutes</h1>
-                <p>take your web app codebase and transform it into a cross platform desktop app with native functionality</p>
-                <div id="buttons-container">
-                    <button>download now</button>
-                    <button>read docs</button>
+                <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-6xl sm:leading-normal">web app to desktop app in minutes</h1>
+                <p class="text-xl mt-4 sm:text-2xl sm:mt-8 text-gray-800">take your web app codebase and transform it into a cross platform desktop app with native functionality</p>
+                <div id="buttons-container" class="mt-12 flex flex-col gap-4 sm:flex-row">
+                    <button class="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">download now</button>
+                    <button class="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">read docs</button>
                 </div>
             </div>
         </div>
