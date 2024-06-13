@@ -710,6 +710,10 @@ h1,h2,h3{
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -740,6 +744,18 @@ h1,h2,h3{
 
 .gap-8{
   gap: 2rem;
+}
+
+.overflow-auto{
+  overflow: auto;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .rounded-full{
@@ -1067,8 +1083,16 @@ h1,h2,h3{
     height: 4rem;
   }
 
+  .md\:min-h-32{
+    min-height: 8rem;
+  }
+
   .md\:w-16{
     width: 4rem;
+  }
+
+  .md\:min-w-32{
+    min-width: 8rem;
   }
 
   .md\:text-\[16px\]{
