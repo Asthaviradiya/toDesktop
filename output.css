@@ -605,12 +605,28 @@ h1,h2,h3{
   margin-top: 1.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -631,6 +647,10 @@ h1,h2,h3{
 
 .h-\[1px\]{
   height: 1px;
+}
+
+.h-20{
+  height: 5rem;
 }
 
 .max-h-12{
@@ -678,6 +698,14 @@ h1,h2,h3{
   max-width: 56rem;
 }
 
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.max-w-7{
+  max-width: 1.75rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -706,12 +734,12 @@ h1,h2,h3{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.flex-col{
-  flex-direction: column;
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.flex-wrap{
-  flex-wrap: wrap;
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -746,12 +774,16 @@ h1,h2,h3{
   gap: 2rem;
 }
 
-.overflow-auto{
-  overflow: auto;
+.gap-6{
+  gap: 1.5rem;
 }
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-clip{
+  overflow: clip;
 }
 
 .overflow-x-hidden{
@@ -817,6 +849,16 @@ h1,h2,h3{
 .bg-yellow-50{
   --tw-bg-opacity: 1;
   background-color: rgb(254 252 232 / var(--tw-bg-opacity));
+}
+
+.bg-red-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -886,6 +928,11 @@ h1,h2,h3{
   padding-bottom: 1rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-32{
   padding-bottom: 8rem;
 }
@@ -922,12 +969,21 @@ h1,h2,h3{
   line-height: 1.75rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .leading-snug{
@@ -1069,6 +1125,10 @@ h1,h2,h3{
     line-height: 1;
   }
 
+  .sm\:font-semibold{
+    font-weight: 600;
+  }
+
   .sm\:leading-normal{
     line-height: 1.5;
   }
@@ -1101,11 +1161,20 @@ h1,h2,h3{
 }
 
 @media (min-width: 1024px){
+  .lg\:mt-32{
+    margin-top: 8rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
