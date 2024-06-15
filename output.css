@@ -636,10 +636,6 @@ h1,h2,h3{
   z-index: 10;
 }
 
-.row-span-4{
-  grid-row: span 4 / span 4;
-}
-
 .row-start-1{
   grid-row-start: 1;
 }
@@ -676,6 +672,16 @@ h1,h2,h3{
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-14{
@@ -847,6 +853,14 @@ h1,h2,h3{
   gap: 2rem;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
+}
+
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -968,6 +982,10 @@ h1,h2,h3{
 
 .p-\[1px\]{
   padding: 1px;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-3{
