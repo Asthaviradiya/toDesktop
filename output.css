@@ -714,14 +714,6 @@ h1,h2,h3{
   margin-top: 1.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.-mt-10{
-  margin-top: -2.5rem;
-}
-
 .block{
   display: block;
 }
@@ -1078,16 +1070,16 @@ h1,h2,h3{
   padding-bottom: 8rem;
 }
 
+.pl-12{
+  padding-left: 3rem;
+}
+
 .pt-12{
   padding-top: 3rem;
 }
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pl-12{
-  padding-left: 3rem;
 }
 
 .text-center{

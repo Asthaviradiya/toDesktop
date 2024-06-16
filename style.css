@@ -18,4 +18,10 @@
     .anchor-hover{
         @apply border-b border-dotted border-y-gray-300 hover:border-solid hover:border-gray-500
     }
+    .hover-gradient-outer{
+        @apply  bg-slate-100 group hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200 p-[1px];
+    }
+    .hover-gradient-inner{
+        @apply group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50;
+    }
 }
